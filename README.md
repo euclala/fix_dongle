@@ -33,3 +33,9 @@ Got to Tools > Port and select the trinket M0
 Upload (Ctrl + U).
 
 DONE!
+
+## Hardware Fix 
+ if plug the dongle into PC and nothing happened, try to remove this Resistance. 
+ then plug the dongle in PC, double chick the RES button.
+ maybe it will run.
+ after fix it. shorted this Resistance is ok.
