@@ -41,4 +41,5 @@ DONE!
  if plug the dongle into PC and nothing happened, try to remove this Resistance.   
   then plug the dongle in PC, double chick the RES button.  
    maybe it will run.  
-   after fix it. shorted this Resistance is ok.
+   after fix it. shorted this Resistance like shis.
+ ![Image text](https://github.com/euclala/fix_dongle/blob/master/3.jpg)
