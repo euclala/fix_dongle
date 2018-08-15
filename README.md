@@ -1,7 +1,9 @@
+## warning 
+
 If your double click the RES button ,  
 The dongle can't go into the update bootloader mode.   
+(make sure you have do it by right way,I think you need to try one more times)
 Use this way to bulid.
-
 
 ## Build 
 Go through [trinket m0: arduino-ide-setup](https://learn.adafruit.com/adafruit-trinket-m0-circuitpython-arduino/arduino-ide-setup) and [trinket m0: arduino-ide-setup2](https://learn.adafruit.com/adafruit-trinket-m0-circuitpython-arduino/using-with-arduino-ide)
@@ -34,7 +36,7 @@ Upload (Ctrl + U).
 
 DONE!
 
-## Hardware Fix 
+## Hardware Fix (do not suggest,final way to test )
  ![Image text](https://github.com/euclala/fix_dongle/blob/master/hardware_fix.jpg)
  if plug the dongle into PC and nothing happened, try to remove this Resistance.   
   then plug the dongle in PC, double chick the RES button.  
