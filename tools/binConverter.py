@@ -19,12 +19,15 @@ def openFileToByte_generator(filename , chunkSize = 128):
             printProgressBar(readBytes/float(fileSize))
             if chunk:
                 for byte in chunk:
-                    yield byte
+                     if sys.version_info[0] < 3:
+                        yield byte
+                    else:
+                        yield byte.to_bytes(1, byteorder='big')
             else:
                 break
 
 
-if(len(sys.argv) is not 2):
+if(len(sys.argv) != 2):
 	sys.exit('usage: binConverter.py "pathToFile\\fileName.bin"')
 
 fileIn = sys.argv[1]
@@ -40,7 +43,7 @@ print("reading file: " + fileIn)
 for byte in openFileToByte_generator(fileIn,16):
     countBytes += 1
     stringBuffer += "0x"+binascii.hexlify(byte).decode('ascii')+", "
-    if countBytes%16 is 0:
+    if countBytes%16 == 0:
     	stringBuffer += "\n\t"
 
 
