@@ -19,7 +19,10 @@ def openFileToByte_generator(filename , chunkSize = 128):
             printProgressBar(readBytes/float(fileSize))
             if chunk:
                 for byte in chunk:
-                    yield byte
+                     if sys.version_info[0] < 3:
+                        yield byte
+                    else:
+                        yield byte.to_bytes(1, byteorder='big')
             else:
                 break
 
